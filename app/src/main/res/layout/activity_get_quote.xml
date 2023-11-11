@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".GetQuote">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/backbutton_img"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/back"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/family_vector"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/familyvector" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/family_vector"
+        android:background="@drawable/bottom_shape">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="enter your zip code"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="25dp"
+            android:textColor="@color/purple_200"
+            android:textStyle="bold"
+            android:fontFamily="@font/sf_pro"
+            android:id="@+id/enterzip_text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enterzip_text"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/sf_pro"
+            android:text="See how affordable a life insurance policy can be. With your zip code we will find the best insurance."
+            android:textColor="@color/black"
+            android:id="@+id/seehow_text"/>
+
+
+        <!--this is the filled layout box for the edit text-->
+        <!--this layout must be used to reposition or change
+            the height and width of the edit text-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seehow_text"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="please enter your area (city)">
+
+            <!--this is the actual edit text which takes the input-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/enter_zipcode"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:visibility="gone"
+            app:lottie_rawRes="@raw/loader"
+            app:lottie_autoPlay="true"
+            android:layout_centerInParent="true"
+            app:lottie_loop="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/location_layout"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/location"
+                app:tint="@color/purple_200" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="New York"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/sf_pro"
+                android:id="@+id/location_text"
+                android:textColor="@color/purple_200"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/cover_image_color_shape"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Find the best insurance"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:fontFamily="@font/sf_pro"
+            android:id="@+id/find_text"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

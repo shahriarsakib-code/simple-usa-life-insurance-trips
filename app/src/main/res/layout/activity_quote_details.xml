@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".QuoteDetails">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/backbutton_img"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/back"
+        app:tint="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backbutton_img"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/sf_pro"
+        android:textStyle="bold"
+        android:id="@+id/title_txt"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_txt"
+        android:background="@drawable/bottom_shape"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="let's see the metrics"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="25dp"
+            android:textColor="@color/purple_200"
+            android:textStyle="bold"
+            android:fontFamily="@font/sf_pro"
+            android:id="@+id/letsee_text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/letsee_text"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/sf_pro"
+            android:text="all the data are collected from internet"
+            android:textColor="@color/black"
+            android:id="@+id/seehow_text"/>
+
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:visibility="gone"
+            app:lottie_rawRes="@raw/loader"
+            app:lottie_autoPlay="true"
+            android:layout_centerInParent="true"
+            app:lottie_loop="true"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seehow_text"
+            android:layout_marginTop="10dp"
+            android:id="@+id/metrics_image"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

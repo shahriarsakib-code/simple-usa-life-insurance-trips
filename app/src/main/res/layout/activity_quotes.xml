@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".QuoteActivity">
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/backbutton_img"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/back"
+        app:tint="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backbutton_img"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="Top 10 Insurance Companies by the Metrics"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/sf_pro"
+        android:textStyle="bold"
+        android:id="@+id/title_txt"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/schoolview"
+        android:layout_below="@+id/title_txt"
+        android:background="@drawable/bottom_shape"
+        android:layout_marginTop="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/maincolor_shape"
+                android:id="@+id/l_1">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="by Market Capitalization"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/sf_pro"
+                    android:textStyle="bold"
+                    android:id="@+id/bymarket_text"/>
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/right_arrow"
+                    app:tint="@color/white" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/l_1"
+                android:background="@drawable/maincolor_shape"
+                android:id="@+id/l_2">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Health Care Companies"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/sf_pro"
+                    android:textStyle="bold"
+                    android:id="@+id/healthcare_text"/>
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/right_arrow"
+                    app:tint="@color/white" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/l_2"
+                android:background="@drawable/maincolor_shape"
+                android:id="@+id/l_3">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sales and Product Line"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/sf_pro"
+                    android:textStyle="bold"
+                    android:id="@+id/sales_text"/>
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/right_arrow"
+                    app:tint="@color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/maincolor_shape"
+                android:layout_below="@+id/l_3"
+                android:id="@+id/l_4">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Health Insurance Companies"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/sf_pro"
+                    android:textStyle="bold"
+                    android:id="@+id/health_insu_text"/>
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/right_arrow"
+                    app:tint="@color/white" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/maincolor_shape"
+                android:layout_below="@+id/l_4"
+                android:id="@+id/l_5">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Life Insurance Companies"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/sf_pro"
+                    android:textStyle="bold"
+                    android:id="@+id/life_insu_text"/>
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/right_arrow"
+                    app:tint="@color/white" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
